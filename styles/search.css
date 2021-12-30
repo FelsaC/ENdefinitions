@@ -1,0 +1,47 @@
+.search{
+    margin: 40px auto;
+    max-width: 1050px;
+}
+
+.search-input-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.search-explanation {
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.search-text-container {
+    margin: auto; 
+    max-width: 400px;
+    /*border: 1px solid lightgray;*/
+    padding: 15px;
+}
+
+.search-text {
+    text-align: justify;
+    color: #444444;
+}
+
+.search-title-portuguese {
+    text-align: center;
+    color: lightgray;
+    font-size: 20px;
+    
+}
+
+.search-title-english {
+    text-align: center;
+
+}
+
+.card-title-custom {
+    font-size: 30px;
+}
+
+
