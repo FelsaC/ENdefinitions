@@ -1,0 +1,17 @@
+.index-header {
+    background-color: #212529 ;
+    padding-bottom: 50px;
+}
+
+.custom-carousel .carousel-item{
+    height:500px;
+    background-position: center;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}

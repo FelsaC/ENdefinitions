@@ -1,0 +1,28 @@
+.random {
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.card-section {
+    margin: 40px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.custom-card {
+    margin:10px;
+}
+
+.random-words-title {
+    text-align: center;
+}
+
+.load-new-cards {
+    margin: auto;
+}
+
+.custom-spinner {
+    margin: 10px auto;
+}

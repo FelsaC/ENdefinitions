@@ -1,9 +1,12 @@
 const searchButton = document.querySelector("[data-input='search-button']");
 const searchInput = document.querySelector("[data-input='search-text']");
+const loadingWhell = document.querySelector("[data-container='loading']");
 
-searchButton.addEventListener("click", () => searchAndCreate(searchInput.value));
+searchButton.addEventListener("click", () => searchAndCreate(searchInput.value.trim()));
 
 async function searchAndCreate(word) {
+    loadingWhell.classList.remove("custom-hidden")
+    
     fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/definitions`, {
         "method": "GET",
         "headers": {
@@ -20,21 +23,36 @@ async function searchAndCreate(word) {
 
 function createDefinitionCard(data) {
     const definitionContainer = document.querySelector("[data-container='card']");
+    console.log(data);
 
     definitionContainer.innerHTML = "";
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+    //creating definition card
+    if(data.word) {
+        let card = document.createElement("div");
+        let cardBody = document.createElement("div");
+        card.classList.add("card", "no-border-custom");
+        card.classList.add("card-body");
 
-    let cardBody = document.createElement("div");
-    card.classList.add("card-body");
+        cardBody.innerHTML = `<h5 class="card-title card-title-custom">${data.word}</h5>`;
 
-    cardBody.innerHTML = `<h5 class="card-title card-title-custom">${data.word}</h5>`;
-    data.definitions.forEach(definitionObj => cardBody.innerHTML += `<p class="card-text">${definitionObj.definition}</p>`)
+        let count = 0;
+        data.definitions.forEach(definitionObj => {
+            count++
+            cardBody.innerHTML += `<p class="card-text">${count}. ${definitionObj.definition}. <span class="custom-partOfspeech">${definitionObj.partOfSpeech}</span></p>`
+        })
 
-    card.appendChild(cardBody);
+        card.appendChild(cardBody);
+        definitionContainer.appendChild(card);
+    } else {
+        definitionContainer.innerHTML= "<h3 class='not-found'> word not found </h3>"
+    }
 
-    definitionContainer.appendChild(card);
-    
+
+    //hidding loding well
+    loadingWhell.classList.add("custom-hidden");
 }
+
+
+
 

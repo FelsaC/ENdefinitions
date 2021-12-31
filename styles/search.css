@@ -1,3 +1,4 @@
+
 .search{
     margin: 40px auto;
     max-width: 1050px;
@@ -40,8 +41,22 @@
 
 }
 
+.custom-search-input {
+    background-color:transparent;
+}
+
+.not-found {
+    text-align: center;
+    color: rgb(83, 83, 83);
+    font-weight: 300;
+}
+
 .card-title-custom {
     font-size: 30px;
+}
+
+.no-border-custom {
+    border: none;
 }
 
 
