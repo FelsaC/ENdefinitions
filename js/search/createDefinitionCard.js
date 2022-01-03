@@ -1,6 +1,7 @@
 import {toggleLoadingWhell} from "./extra.js"
 
 export default function createDefinitionCard(data) {
+    console.log(data);
     //limpeza da pesquisa anterior
     const definitionContainer = document.querySelector("[data-container='card']");
     definitionContainer.innerHTML = "";
@@ -14,11 +15,16 @@ export default function createDefinitionCard(data) {
 
         cardBody.innerHTML = `<h5 class="card-title card-title-custom">${data.word}</h5>`;
 
-        let count = 0;
-        data.definitions.forEach(definitionObj => {
-            count++
-            cardBody.innerHTML += `<p class="card-text custom-card-text">${count}. ${definitionObj.definition}. <span class="custom-partOfspeech">${definitionObj.partOfSpeech}</span></p>`
-        })
+        //define conteudo dependendo de se foi encontrada uma definição ou não*/
+        if(data.definitions.length){
+            let count = 0;
+            data.definitions.forEach(definitionObj => {
+                count++
+                cardBody.innerHTML += `<p class="card-text custom-card-text">${count}. ${definitionObj.definition}. <span class="custom-partOfspeech">${definitionObj.partOfSpeech}</span></p>`
+            })
+        } else {
+            cardBody.innerHTML += `<p class="card-text custom-card-text not-found">No definition found / Nenhuma definição encontrada</p>`;
+        }
 
         card.appendChild(cardBody);
         definitionContainer.appendChild(card);

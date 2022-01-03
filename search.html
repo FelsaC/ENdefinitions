@@ -36,15 +36,18 @@
     </header>
     <main class="search">
         <section class="search-section">
+
             <h3 class="search-title-portuguese">Procure por uma palavra (somente em inglês)</h3>
             <h2 class="search-title-english">Search for a word</h2>
 
             <form class="search-input-container" data-form="search">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control custom-search-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" data-input="search-text" title="A pesquisa não deve conter caracteres especiais" pattern="^[\w\s]+$"required>
+                    <input type="text" class="form-control custom-search-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" data-input="search-text" title="A pesquisa não deve conter caracteres especiais" pattern="^[\w\s-']+$"required>
                     <button type="submit" class="btn btn-outline-dark" data-input="search-button">Search</button>
                 </div>
+                <span class="d-none suggestion" data-container="suggestion">Suggestion</span>
             </form>
+
             <section class="search-input-container">
                 <div class="d-flex justify-content-center d-none" data-container="loading">
                     <div class="spinner-border" role="status">
@@ -52,10 +55,9 @@
                     </div>
                 </div>
                 <section data-container="card">
-
                 </section>
-                
             </section>
+
         </section>
 
         <section class="search-explanation">
