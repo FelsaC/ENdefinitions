@@ -39,7 +39,7 @@ function createDefinitionCard(data) {
         let count = 0;
         data.definitions.forEach(definitionObj => {
             count++
-            cardBody.innerHTML += `<p class="card-text">${count}. ${definitionObj.definition}. <span class="custom-partOfspeech">${definitionObj.partOfSpeech}</span></p>`
+            cardBody.innerHTML += `<p class="card-text custom-card-text">${count}. ${definitionObj.definition}. <span class="custom-partOfspeech">${definitionObj.partOfSpeech}</span></p>`
         })
 
         card.appendChild(cardBody);

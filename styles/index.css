@@ -1,6 +1,25 @@
+body {
+    background-color: #212529;
+} 
+
+.index {
+    min-height: calc(100vh - 250px);
+    background-image: url(../assets/letters.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .index-header {
     background-color: #212529 ;
-    padding-bottom: 50px;
+}
+
+.custom-carousel {
+    margin-bottom: 50px;
 }
 
 .custom-carousel .carousel-item{
@@ -14,4 +33,13 @@
     top: 0;
     left: 0;
     min-height: 500px;
+}
+
+
+.custom-index-button {
+    border-radius: 100%;
+    font-size: 80px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #212529dc;
 }

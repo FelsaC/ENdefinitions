@@ -1,6 +1,7 @@
 .random {
     max-width: 1000px;
     margin: 80px auto;
+    min-height: calc(100vh - 250px);
 }
 
 .card-section {

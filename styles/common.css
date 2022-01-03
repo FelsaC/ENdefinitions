@@ -1,6 +1,14 @@
 .common-footer {
-    border-top: 1px solid lightgray;
-    height: 200px;
+    min-height: 200px;
+    background-color: #212529;
+  
+    margin: auto;
+}
+
+.common-footer-section {
+   max-width: 500px;
+   margin: auto;
+   padding: 10px;
 }
 
 .custom-hidden {
