@@ -9,7 +9,7 @@ A maioria dos componentes vieram do bootstrap, porém foram adicionados alguns c
 
 ### Pesquisa das palavras
 
-Para a pesquisa e o retorno de definições e sugestões, ENdefinitios se integra com a WordsApi. 
+Para a pesquisa e o retorno de definições e sugestões, ENdefinitios se integra com a WordsApi, da qual é usada o funcionalidade "definitions" para retornar uma definição para a palavra, caso a api contenho uma definição, e a funcionalidade de palavras aleatórias dela que é usado na criação de sugestões de pesquisa, que tras uma palavra aleatoria ja preenchida no input de pesquisa toda vez que a pagina é recarregada.
 
 ## Como usar
 
