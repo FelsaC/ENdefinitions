@@ -41,6 +41,7 @@ function pushSuccess(data, form, returnMessage) {
 }
 
 function pushFail (returnMessage) {
+    toggleLoadingWhell()
     returnMessage.textContent = "Error form not sent!";
     returnMessage.style.color = "red";
 }
