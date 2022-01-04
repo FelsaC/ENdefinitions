@@ -1,5 +1,5 @@
 # ENdefinitions
-Endefinitions é um site que permite a pesquisa de definições de palavras da língua inglesa(somente disponível definições em inglês). 
+Endefinitions é um site que permite a pesquisa de definições de palavras da língua inglêsa(somente disponível definições em inglês). 
 
 ## Conteúdo
 * [Bibliotecas e APIs](#Bibliotecas-e-APIs)
@@ -16,7 +16,7 @@ Para o projeto foram utilizadas as bibliotecas e APIs a seguir:
 * [prog-bolsas-api](https://github.com/leostacowski/prog-bolsas-api)
 
 ## Estilização
-A maioria dos componentes vieram do bootstrap, porém uma certa quantia de css personalizado foi adicionado as páginas, e alguns poucos componetes foram criandos do zero.
+A maioria dos componentes vieram do bootstrap, porém uma certa quantia de css personalizado foi adicionado as páginas, e alguns poucos componentes foram criandos do zero.
 
 #### Exemplos:
 ![Navegação bootstrap](./README-assets/navbootstrap.png)  
@@ -34,7 +34,7 @@ A maioria dos componentes vieram do bootstrap, porém uma certa quantia de css p
 
 
 ## Interatividade e APIs
-Parte da interatividade do site já veio embutida com o bootstrap, carrousel e navegação responsiva, o resto como a pesquisa das definições e envio de formulários foram feitos com a interação de javascript e APIs.
+Parte da interatividade do site já veio embutida com o bootstrap, por exemplo carrousel e navegação responsiva, o resto como a pesquisa das definições e envio de formulários foram feitos com a interação de javascript e APIs.
 
 As requisições de ambas as APIs foram feitas utilizando a função [**fetch**](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) do javascript.
 ```
@@ -49,7 +49,7 @@ As requisições de ambas as APIs foram feitas utilizando a função [**fetch**]
   .then(data => placeSuggestion(data, input))
   .catch(err => console.log("error: ", err))
 ```  
-*exemplo de funcão fetch retirada do arquivo ./js/search/loadSuggestions.js*
+*exemplo de função fetch retirada do arquivo ./js/search/loadSuggestions.js*
 
 ## Como usar
 ### Pesquisa das palavras
@@ -60,7 +60,7 @@ Na pagina haverá um  input de pequisa onde deverá ser escrita a palavra que se
 ![input de pesquisa](./README-assets/searchInput.png)
 
 #### Sugestões
-Pode-se perceber que quando a página carregar provavelmente o input pode já estar preenchido com um palavra, essa é a funcionalidade de sugestões, ela tras uma palavra aleatória da [api](https://www.wordsapi.com/) preenche o input caso ele esteja vazio durante o carregamento da página. Caso não deseje pesquisar palavra sujerida só é necessaria apaga-la e pesquisar o que tenha em mente.
+Pode-se perceber que quando a página carregar provavelmente o input já estará preenchido com um palavra, essa é a funcionalidade de sugestões, ela tráz uma palavra aleatória da [api](https://www.wordsapi.com/) e preenche o input caso ele esteja vazio durante o carregamento da página. Caso não deseje pesquisar a palavra sujerida só é necessario apaga-la e pesquisar o que tenha em mente.
 
 #### Palavras sem difinição
 A words api conta com uma quantidade absurda de palavras, porém se limita com palavras do inglês e mesmo com essas é possivel se deparar com uma palavra desconhecida a api, nesses casos sua pesquisa será respondida com a mensagem "word not found".
