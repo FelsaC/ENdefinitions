@@ -3,6 +3,10 @@ Endefinitions é um site que permite a pesquisa de definições de palavras da l
 
 ## Conteudo
 * [Tecnologias utilizadas](#Tecnologias-utilizadas)
+* [Estilização](#Estilização)
+* [Pesquisa das palavras](#Pesquisa-das-palavras)
+* [Como usar](#Como-usar)
+* [Página de contato](#Página-de-contato)
 
 ## Tecnologias utilizadas
 Junto ao padrão de html, css e javascript o site usa a biblioteca [bootstrap](https://getbootstrap.com/), as API's [words api](https://www.wordsapi.com/).
