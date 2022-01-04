@@ -67,6 +67,6 @@ A words api conta com uma quantidade absurda de palavras, porém se limita com p
 
 Porém ainda existe um segundo caso, nem todas as palavras disponiveis contam com uma definição, nesses caso a pesquisa retornara a palavra pesquisada seguinda da mensagem "No definition found / Nenhuma definição encontrada"
 
-## Página de contato
+### Página de contato
 A página de contato tem um funcionalidade mais simples, o formulário deve ser prenchido e enviado, as informações contidas nele serão mandadas para a [api de boldas da compasso](https://github.com/leostacowski/prog-bolsas-api).
 
