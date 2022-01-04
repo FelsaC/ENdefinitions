@@ -57,7 +57,7 @@ Para utilizar a funcionalidade de pesquisa é necessario ir a aba search, que po
 ![Imagem de botão de search no menu de naveção](./README-assets/searchOnNav.png)
 
 Na pagina haverá um  input de pequisa onde deverá ser escrita a palavra que se deseja saber a definição.
-![input de pesquisa](./README-assets/searchInput.js)
+![input de pesquisa](./README-assets/searchInput.png)
 
 #### Sugestões
 Pode-se perceber que quando a página carregar provavelmente o input pode já estar preenchido com um palavra, essa é a funcionalidade de sugestões, ela tras uma palavra aleatória da [api](https://www.wordsapi.com/) preenche o input caso ele esteja vazio durante o carregamento da página. Caso não deseje pesquisar palavra sujerida só é necessaria apaga-la e pesquisar o que tenha em mente.
